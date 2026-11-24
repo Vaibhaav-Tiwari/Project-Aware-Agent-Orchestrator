@@ -1,42 +1,41 @@
 <div align="center">
-  <img src="assets/ao-logo.svg" alt="Orchestrator.inc logo" width="144" height="144" />
 
 <br />
 
-<img src="docs/assets/readme/hero.png" alt="Orchestrator.inc Kanban showing worker sessions grouped by live status" width="100%" />
+<img src="docs/assets/readme/hero.png" alt="Project-Aware-Agent-Orchestrator Kanban showing worker sessions grouped by live status" width="100%" />
 </div>
 
 ## A workspace for agent-driven development
 
 One coding agent can handle a task. Running several across a project creates a different job: deciding what matters, splitting work cleanly, giving each agent the right context, preventing branch collisions, and following every change through review and merge.
 
-Orchestrator.inc is a local desktop workspace built for that job. Add a repository and create a worker session with the coding agent, model, and interface that fit the task. For Git-backed work, Orchestrator.inc gives the worker its own branch and worktree. The task, conversation, terminal, changed files, browser preview, pull request, CI, and review state stay attached to that session from start to finish.
+Project-Aware-Agent-Orchestrator is a local desktop workspace built for that job. Add a repository and create a worker session with the coding agent, model, and interface that fit the task. For Git-backed work, Project-Aware-Agent-Orchestrator gives the worker its own branch and worktree. The task, conversation, terminal, changed files, browser preview, pull request, CI, and review state stay attached to that session from start to finish.
 
-Behind the desktop app, Orchestrator.inc's local daemon watches agent activity and source-control state. The result is a shared, live view of the project instead of a collection of disconnected terminals, branches, and browser tabs.
+Behind the desktop app, Project-Aware-Agent-Orchestrator's local daemon watches agent activity and source-control state. The result is a shared, live view of the project instead of a collection of disconnected terminals, branches, and browser tabs.
 
-<img src="docs/assets/readme/tui.png" alt="Orchestrator.inc workspace showing a coding agent's native terminal UI" width="100%" />
+<img src="docs/assets/readme/tui.png" alt="Project-Aware-Agent-Orchestrator workspace showing a coding agent's native terminal UI" width="100%" />
 
 ## Workers execute focused tasks
 
-A worker is Orchestrator.inc's unit of execution: one task, one coding agent, and one isolated workspace. Use **New task** when the work is already clear. Describe the outcome, choose an agent and model, attach relevant files, and work with the agent in structured Chat or its native terminal UI.
+A worker is Project-Aware-Agent-Orchestrator's unit of execution: one task, one coding agent, and one isolated workspace. Use **New task** when the work is already clear. Describe the outcome, choose an agent and model, attach relevant files, and work with the agent in structured Chat or its native terminal UI.
 
 Open a worker at any time to continue the conversation, attach to its terminal, inspect its changes, use its isolated browser, review its pull request, or send CI and review feedback back to the same agent. This makes each task independently understandable and keeps parallel work from collapsing into one shared context.
 
-<img src="docs/assets/readme/new-task.png" alt="Create a new task in Orchestrator.inc with an agent and model selected" width="100%" />
+<img src="docs/assets/readme/new-task.png" alt="Create a new task in Project-Aware-Agent-Orchestrator with an agent and model selected" width="100%" />
 
 ## The orchestrator plans across the project
 
-The project orchestrator is Orchestrator.inc's persistent planning and coordination agent. It works at the level above individual tasks: the product direction, technical strategy, priorities, and sequence of work across the repository.
+The project orchestrator is Project-Aware-Agent-Orchestrator's persistent planning and coordination agent. It works at the level above individual tasks: the product direction, technical strategy, priorities, and sequence of work across the repository.
 
-Use the orchestrator to explore an idea before implementation, brainstorm product and technical approaches, reason through tradeoffs, identify high-impact work, and turn an ambiguous outcome into a concrete plan. Its project-scoped conversation preserves goals, decisions, constraints, and earlier reasoning. It combines that planning history with repository context and live Orchestrator.inc state, including active workers, ownership, pull requests, CI, and reviews. This keeps planning grounded in both the project and the work already underway.
+Use the orchestrator to explore an idea before implementation, brainstorm product and technical approaches, reason through tradeoffs, identify high-impact work, and turn an ambiguous outcome into a concrete plan. Its project-scoped conversation preserves goals, decisions, constraints, and earlier reasoning. It combines that planning history with repository context and live Project-Aware-Agent-Orchestrator state, including active workers, ownership, pull requests, CI, and reviews. This keeps planning grounded in both the project and the work already underway.
 
 When a plan becomes actionable, the orchestrator can break it into focused tasks, spawn or redirect workers, pass each worker the relevant context, follow their progress, and coordinate follow-up work. The orchestrator owns planning and delegation; workers own implementation, tests, commits, and pull requests.
 
-<img src="docs/assets/readme/orchestrator.png" alt="Orchestrator.inc coordinating multiple workers and passing them focused project context" width="100%" />
+<img src="docs/assets/readme/orchestrator.png" alt="Project-Aware-Agent-Orchestrator coordinating multiple workers and passing them focused project context" width="100%" />
 
 ## The Kanban keeps the system legible
 
-Every worker appears on the same live board, whether you started it from **New task** or the orchestrator delegated it. Orchestrator.inc derives each card's position from session, pull request, CI, and review facts, turning the Kanban into an operational view of the project:
+Every worker appears on the same live board, whether you started it from **New task** or the orchestrator delegated it. Project-Aware-Agent-Orchestrator derives each card's position from session, pull request, CI, and review facts, turning the Kanban into an operational view of the project:
 
 - **Working:** workers that are actively implementing or ready for another instruction
 - **Needs you:** blocked sessions, missing input, failed CI, requested changes, or lost signals
@@ -45,17 +44,17 @@ Every worker appears on the same live board, whether you started it from **New t
 
 Each card keeps the task, agent, branch, activity, pull request, and status together. Open it to inspect the conversation or terminal, changed files, PR summary, reviews, and preview. The board shows what is moving, what is blocked, and where your attention will have the most impact.
 
-<img src="docs/assets/readme/hero.png" alt="Orchestrator.inc Kanban showing worker sessions grouped by live status" width="100%" />
+<img src="docs/assets/readme/hero.png" alt="Project-Aware-Agent-Orchestrator Kanban showing worker sessions grouped by live status" width="100%" />
 
 ## One workflow, from idea to merge
 
 1. **Start at the right level.** Give a clear task directly to a worker, or develop a larger outcome with the project orchestrator and let it shape the plan.
 2. **Delegate focused work.** Start workers yourself or have the orchestrator create them with the context and ownership they need.
-3. **Build in isolation.** Every Git-backed worker gets its own branch and worktree; standalone agents get Orchestrator.inc-managed branchless directories without requiring a project or repository.
-4. **Supervise live state.** Orchestrator.inc follows agent activity, pull requests, CI, review feedback, and merge conflicts, then reflects those facts on the Kanban.
+3. **Build in isolation.** Every Git-backed worker gets its own branch and worktree; standalone agents get Project-Aware-Agent-Orchestrator-managed branchless directories without requiring a project or repository.
+4. **Supervise live state.** Project-Aware-Agent-Orchestrator follows agent activity, pull requests, CI, review feedback, and merge conflicts, then reflects those facts on the Kanban.
 5. **Close the feedback loop.** Inspect any worker directly, make project-level decisions with the orchestrator, and return actionable failures or review comments to the agent that owns the work.
 
-Orchestrator.inc works with the coding agents and source-control workflow you already use. Agents keep their native strengths; Orchestrator.inc supplies the project context, isolated execution, coordination, and operational view that make them work as a system.
+Project-Aware-Agent-Orchestrator works with the coding agents and source-control workflow you already use. Agents keep their native strengths; Project-Aware-Agent-Orchestrator supplies the project context, isolated execution, coordination, and operational view that make them work as a system.
 
 ## Product highlights
 
@@ -66,7 +65,7 @@ Orchestrator.inc works with the coding agents and source-control workflow you al
       <p>Keep CI, mergeability, reviewer state, and interactive agent reviews beside the worker, then return requested changes to the same owner.</p>
     </td>
     <td width="64%">
-      <img src="docs/assets/readme/review.png" alt="Worker session with pull request, CI, and agent review state in Orchestrator.inc" width="100%" />
+      <img src="docs/assets/readme/review.png" alt="Worker session with pull request, CI, and agent review state in Project-Aware-Agent-Orchestrator" width="100%" />
     </td>
   </tr>
   <tr>
@@ -81,10 +80,10 @@ Orchestrator.inc works with the coding agents and source-control workflow you al
   <tr>
     <td width="36%" valign="middle">
       <h3>Native interfaces, one supervisor</h3>
-      <p>Use structured Chat or the agent's native terminal UI while Orchestrator.inc keeps task context, workspace state, and feedback in one place.</p>
+      <p>Use structured Chat or the agent's native terminal UI while Project-Aware-Agent-Orchestrator keeps task context, workspace state, and feedback in one place.</p>
     </td>
     <td width="64%">
-      <img src="docs/assets/readme/tui.png" alt="Agent terminal interface supervised inside Orchestrator.inc" width="100%" />
+      <img src="docs/assets/readme/tui.png" alt="Agent terminal interface supervised inside Project-Aware-Agent-Orchestrator" width="100%" />
     </td>
   </tr>
 </table>
@@ -156,4 +155,4 @@ Orchestrator.inc works with the coding agents and source-control workflow you al
 
 ## License
 
-Orchestrator.inc is available under the [Apache License 2.0](LICENSE).
+Project-Aware-Agent-Orchestrator is available under the [Apache License 2.0](LICENSE).
